@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int, input().split()))
+a.sort()
+res1 = (a[n-1] - a[0]) * (a[n-2] - a[1])
+res2 = (a[n-1] - a[1]) * (a[n-2] - a[0])
+print(max(res1, res2))
